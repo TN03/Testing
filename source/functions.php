@@ -928,7 +928,6 @@ function XH_readContents($language = null)
     $content = preg_split('/(?=<!--XH_ml[1-9]+:)/i', $content);
     $content[] = preg_replace('/(.*?)<\/body>.*/isu', '$1', array_pop($content));
     $contentHead = array_shift($content);
-    
     $temp_h = array();
     foreach ($content as $page) {
         $c[] = $page;
